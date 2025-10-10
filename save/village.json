@@ -1,0 +1,14 @@
+{
+  "resources": {
+    "gold": 120,
+    "stone": 40,
+    "wood": 60,
+    "food": 80
+  },
+  "buildings": [
+    { "id": "townhall", "level": 1, "prodPerMinute": { "gold": 2 } },
+    { "id": "lumbermill", "level": 1, "prodPerMinute": { "wood": 1.5 } },
+    { "id": "quarry", "level": 1, "prodPerMinute": { "stone": 1 } },
+    { "id": "farm", "level": 1, "prodPerMinute": { "food": 1.2 } }
+  ]
+}
