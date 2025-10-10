@@ -1,0 +1,24 @@
+[
+  {
+    "id": "mission-intro",
+    "title": "Guard the North Gate",
+    "difficulty": 2,
+    "durationMin": 5,
+    "energyCost": 8,
+    "rewards": { "gold": 30, "wood": 5, "stone": 0, "food": 4 },
+    "enemies": [{ "name": "Goblin Scouts", "power": 12 }],
+    "status": "available",
+    "assignedHeroes": []
+  },
+  {
+    "id": "mission-forage",
+    "title": "Forage in the Moonlit Grove",
+    "difficulty": 3,
+    "durationMin": 8,
+    "energyCost": 10,
+    "rewards": { "gold": 20, "wood": 0, "stone": 4, "food": 12 },
+    "enemies": [{ "name": "Lurking Wolves", "power": 18 }],
+    "status": "available",
+    "assignedHeroes": []
+  }
+]

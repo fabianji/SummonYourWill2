@@ -1,0 +1,10 @@
+{
+  "Spark": {
+    "bond": 72,
+    "traits": ["Fiery", "Loyal"]
+  },
+  "Gizmo": {
+    "bond": 65,
+    "traits": ["Curious", "Mechanical"]
+  }
+}

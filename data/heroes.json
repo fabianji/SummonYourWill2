@@ -1,0 +1,102 @@
+[
+  {
+    "id": "hero-ember",
+    "name": "Emberlight the Brave",
+    "level": 5,
+    "sex": "female",
+    "origin": "Ashen Peaks",
+    "professions": ["Warrior", "Leader"],
+    "desc": "A seasoned warrior who rallies the defenders at dawn.",
+    "favorite": true,
+    "avatar": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc2NCcgaGVpZ2h0PSc2NCc+PHJlY3Qgd2lkdGg9JzY0JyBoZWlnaHQ9JzY0JyBmaWxsPScjZmY2YjZiJy8+PC9zdmc+",
+    "pet": "Spark",
+    "petImg": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMicgaGVpZ2h0PSczMic+PGNpcmNsZSBjeD0nMTYnIGN5PScxNicgcj0nMTYnIGZpbGw9JyM5YjVkZTUnLz48L3N2Zz4=",
+    "petLevel": 3,
+    "petDesc": "A phoenix fledgling brimming with energy.",
+    "petOrigin": "Molten Nest",
+    "petfavorite": true
+  },
+  {
+    "id": "hero-tide",
+    "name": "Tidecaller Miren",
+    "level": 4,
+    "sex": "neutral",
+    "origin": "Azure Coast",
+    "professions": ["Mage", "Navigator"],
+    "desc": "Guides ships safely through night storms with arcane light.",
+    "favorite": false,
+    "avatar": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc2NCcgaGVpZ2h0PSc2NCc+PHJlY3Qgd2lkdGg9JzY0JyBoZWlnaHQ9JzY0JyBmaWxsPScjNGVjZGM0Jy8+PC9zdmc+"
+  },
+  {
+    "id": "hero-auren",
+    "name": "Auren of the Whispering Woods",
+    "level": 6,
+    "sex": "male",
+    "origin": "Whispering Woods",
+    "professions": ["Ranger", "Scout"],
+    "desc": "Knows every trail and secret grove surrounding the village.",
+    "favorite": false,
+    "avatar": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc2NCcgaGVpZ2h0PSc2NCc+PHJlY3Qgd2lkdGg9JzY0JyBoZWlnaHQ9JzY0JyBmaWxsPScjZmZlNjZkJy8+PC9zdmc+"
+  },
+  {
+    "id": "hero-lux",
+    "name": "Luxia Starbinder",
+    "level": 3,
+    "sex": "female",
+    "origin": "Celestial College",
+    "professions": ["Astrologer", "Scholar"],
+    "desc": "Charts the skies to predict auspicious times for missions.",
+    "favorite": false,
+    "avatar": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc2NCcgaGVpZ2h0PSc2NCc+PHJlY3Qgd2lkdGg9JzY0JyBoZWlnaHQ9JzY0JyBmaWxsPScjNWU2MGNlJy8+PC9zdmc+"
+  },
+  {
+    "id": "hero-ferris",
+    "name": "Ferris Ironroot",
+    "level": 5,
+    "sex": "male",
+    "origin": "Stoneholm",
+    "professions": ["Smith", "Defender"],
+    "desc": "Fortifies the gates with unyielding resolve and fresh armor.",
+    "favorite": false,
+    "avatar": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc2NCcgaGVpZ2h0PSc2NCc+PHJlY3Qgd2lkdGg9JzY0JyBoZWlnaHQ9JzY0JyBmaWxsPScjZjdmZmY3Jy8+PC9zdmc+"
+  },
+  {
+    "id": "hero-nara",
+    "name": "Nara Windwhisper",
+    "level": 2,
+    "sex": "female",
+    "origin": "High Plains",
+    "professions": ["Scout", "Messenger"],
+    "desc": "Relays mission updates with unmatched speed across the realm.",
+    "favorite": false,
+    "avatar": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc2NCcgaGVpZ2h0PSc2NCc+PHJlY3Qgd2lkdGg9JzY0JyBoZWlnaHQ9JzY0JyBmaWxsPScjMWE1MzVjJy8+PC9zdmc+"
+  },
+  {
+    "id": "hero-corin",
+    "name": "Corin Emberforge",
+    "level": 4,
+    "sex": "male",
+    "origin": "Forgeheart",
+    "professions": ["Engineer", "Artificer"],
+    "desc": "Keeps siege engines humming with clever tinkering.",
+    "favorite": false,
+    "avatar": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc2NCcgaGVpZ2h0PSc2NCc+PHJlY3Qgd2lkdGg9JzY0JyBoZWlnaHQ9JzY0JyBmaWxsPScjZmY5ZjFjJy8+PC9zdmc+",
+    "pet": "Gizmo",
+    "petImg": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMicgaGVpZ2h0PSczMic+PGNpcmNsZSBjeD0nMTYnIGN5PScxNicgcj0nMTYnIGZpbGw9JyNmMTViYjUnLz48L3N2Zz4=",
+    "petLevel": 2,
+    "petDesc": "A clockwork ferret that scouts tiny tunnels.",
+    "petOrigin": "Forgeheart Workshop",
+    "petfavorite": true
+  },
+  {
+    "id": "hero-lyra",
+    "name": "Lyra Dawnchaser of the Endless Steppe",
+    "level": 3,
+    "sex": "female",
+    "origin": "Endless Steppe",
+    "professions": ["Bard", "Healer"],
+    "desc": "Her songs bolster morale and mend weary spirits.",
+    "favorite": false,
+    "avatar": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc2NCcgaGVpZ2h0PSc2NCc+PHJlY3Qgd2lkdGg9JzY0JyBoZWlnaHQ9JzY0JyBmaWxsPScjMmVjNGI2Jy8+PC9zdmc+"
+  }
+]
