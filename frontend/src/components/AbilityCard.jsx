@@ -1,4 +1,8 @@
+// Tarjeta presentacional para mostrar una habilidad desbloqueada.
+import PropTypes from "prop-types";
+
 const AbilityCard = ({ ability }) => {
+  // Renderiza la fecha de desbloqueo, el nombre, la descripción y chips de imágenes asociadas.
   return (
     <div className="card">
       <div className="card-content">
@@ -19,6 +23,15 @@ const AbilityCard = ({ ability }) => {
       </div>
     </div>
   );
+};
+
+AbilityCard.propTypes = {
+  ability: PropTypes.shape({
+    unlocked_at: PropTypes.string,
+    name: PropTypes.string,
+    description: PropTypes.string,
+    image_urls: PropTypes.arrayOf(PropTypes.string),
+  }).isRequired,
 };
 
 export default AbilityCard;

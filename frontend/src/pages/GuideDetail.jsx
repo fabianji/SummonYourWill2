@@ -1,3 +1,4 @@
+// Página de detalle que muestra datos y contenidos relacionados a una guía.
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import DiaryCard from "../components/DiaryCard";
@@ -5,18 +6,21 @@ import MediaCard from "../components/MediaCard";
 import { fetchGuide, fetchDiaryEntries, fetchMedia } from "../services/api";
 
 const GuideDetailPage = () => {
+  // Lee el ID de la guía desde la URL.
   const { id } = useParams();
   const [guide, setGuide] = useState(null);
   const [diaryEntries, setDiaryEntries] = useState([]);
   const [media, setMedia] = useState([]);
 
   useEffect(() => {
+    // Carga información de la guía y sus recursos asociados.
     fetchGuide(id).then(setGuide).catch(console.error);
     fetchDiaryEntries({ guide_id: id }).then(setDiaryEntries).catch(console.error);
     fetchMedia({ guide_id: id }).then(setMedia).catch(console.error);
   }, [id]);
 
   if (!guide) {
+    // Estado de carga mientras se obtiene la guía.
     return (
       <div className="page">
         <p className="muted">Loading guide...</p>

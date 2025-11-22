@@ -1,3 +1,4 @@
+// Página para registrar y listar habilidades desbloqueadas.
 import { useEffect, useState } from "react";
 import AbilityCard from "../components/AbilityCard";
 import { fetchGuides, fetchAbilities, createAbility } from "../services/api";
@@ -12,21 +13,25 @@ const initialForm = {
 };
 
 const AbilitiesPage = () => {
+  // Estados de guías, habilidades existentes, formulario y bandera de carga.
   const [guides, setGuides] = useState([]);
   const [abilities, setAbilities] = useState([]);
   const [form, setForm] = useState(initialForm);
   const [loading, setLoading] = useState(false);
 
   const loadData = () => {
+    // Recupera guías y habilidades almacenadas.
     fetchGuides().then(setGuides).catch(console.error);
     fetchAbilities().then(setAbilities).catch(console.error);
   };
 
   useEffect(() => {
+    // Carga inicial al montar el componente.
     loadData();
   }, []);
 
   const handleSubmit = async (e) => {
+    // Gestiona el envío del formulario para crear una habilidad.
     e.preventDefault();
     setLoading(true);
     try {
@@ -47,6 +52,7 @@ const AbilitiesPage = () => {
   };
 
   const toggleGuide = (id) => {
+    // Agrega o quita un guía del arreglo seleccionado.
     setForm((prev) => ({
       ...prev,
       guide_ids: prev.guide_ids.includes(id)

@@ -1,3 +1,4 @@
+// Página de inicio que muestra resúmenes de guías, diario, habilidades y media.
 import { useEffect, useState } from "react";
 import GuideCard from "../components/GuideCard";
 import DiaryCard from "../components/DiaryCard";
@@ -6,12 +7,14 @@ import MediaCard from "../components/MediaCard";
 import { fetchGuides, fetchDiaryEntries, fetchAbilities, fetchMedia } from "../services/api";
 
 const HomePage = () => {
+  // Estados locales para cada tipo de entidad mostrada en la portada.
   const [guides, setGuides] = useState([]);
   const [diaryEntries, setDiaryEntries] = useState([]);
   const [abilities, setAbilities] = useState([]);
   const [media, setMedia] = useState([]);
 
   useEffect(() => {
+    // Carga las colecciones y limita las listas para mostrar solo las más recientes.
     fetchGuides().then(setGuides).catch(console.error);
     fetchDiaryEntries().then((entries) => setDiaryEntries(entries.slice(0, 3))).catch(console.error);
     fetchAbilities().then((items) => setAbilities(items.slice(0, 3))).catch(console.error);

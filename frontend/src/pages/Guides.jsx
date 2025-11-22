@@ -1,3 +1,4 @@
+// Página para crear y listar guías espirituales.
 import { useEffect, useState } from "react";
 import GuideCard from "../components/GuideCard";
 import { fetchGuides, createGuide } from "../services/api";
@@ -11,6 +12,7 @@ const initialForm = {
 };
 
 const GuidesPage = () => {
+  // Estado de lista de guías y formulario controlado.
   const [guides, setGuides] = useState([]);
   const [form, setForm] = useState(initialForm);
   const [loading, setLoading] = useState(false);
@@ -18,10 +20,12 @@ const GuidesPage = () => {
   const loadGuides = () => fetchGuides().then(setGuides).catch(console.error);
 
   useEffect(() => {
+    // Carga inicial de guías al montar el componente.
     loadGuides();
   }, []);
 
   const handleSubmit = async (e) => {
+    // Envía el formulario para crear una nueva guía.
     e.preventDefault();
     setLoading(true);
     try {

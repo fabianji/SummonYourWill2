@@ -1,4 +1,8 @@
+// Tarjeta para mostrar información breve de un elemento de media.
+import PropTypes from "prop-types";
+
 const MediaCard = ({ item }) => {
+  // Expone tipo, título, descripción opcional, URL y etiquetas.
   return (
     <div className="card">
       <div className="card-content">
@@ -18,6 +22,16 @@ const MediaCard = ({ item }) => {
       </div>
     </div>
   );
+};
+
+MediaCard.propTypes = {
+  item: PropTypes.shape({
+    media_type: PropTypes.string,
+    title: PropTypes.string,
+    description: PropTypes.string,
+    url: PropTypes.string,
+    tags: PropTypes.arrayOf(PropTypes.string),
+  }).isRequired,
 };
 
 export default MediaCard;

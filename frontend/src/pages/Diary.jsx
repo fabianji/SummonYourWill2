@@ -1,3 +1,4 @@
+// Página de diario con filtros y formulario de creación de entradas.
 import { useEffect, useMemo, useState } from "react";
 import DiaryCard from "../components/DiaryCard";
 import { fetchGuides, fetchDiaryEntries, createDiaryEntry } from "../services/api";
@@ -11,6 +12,7 @@ const initialForm = {
 };
 
 const DiaryPage = () => {
+  // Estado de entradas, guías disponibles, formulario, filtros y carga.
   const [entries, setEntries] = useState([]);
   const [guides, setGuides] = useState([]);
   const [form, setForm] = useState(initialForm);
@@ -20,14 +22,17 @@ const DiaryPage = () => {
   const loadEntries = () => fetchDiaryEntries(filters).then(setEntries).catch(console.error);
 
   useEffect(() => {
+    // Carga guías para permitir selección en formularios y filtros.
     fetchGuides().then(setGuides).catch(console.error);
   }, []);
 
   useEffect(() => {
+    // Vuelve a cargar entradas cuando cambian los filtros seleccionados.
     loadEntries();
   }, [filters]);
 
   const handleSubmit = async (e) => {
+    // Procesa la creación de una nueva entrada de diario.
     e.preventDefault();
     setLoading(true);
     try {
@@ -45,6 +50,7 @@ const DiaryPage = () => {
     }
   };
 
+  // Memo simple por consistencia; en futuro podría filtrar guías.
   const filteredGuides = useMemo(() => guides, [guides]);
 
   return (

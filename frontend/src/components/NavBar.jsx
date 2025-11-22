@@ -1,6 +1,8 @@
+// Barra de navegación principal para moverse entre secciones.
 import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
+  // Ofrece enlaces a las rutas clave del tablero espiritual.
   return (
     <header className="navbar">
       <div className="brand">Spiritual Universe</div>

@@ -1,5 +1,7 @@
+// Servicio de cliente HTTP para comunicarse con el backend FastAPI.
 const API_URL = "http://localhost:8000";
 
+// Maneja respuestas, lanzando error con detalle si el estado no es exitoso.
 const handleResponse = async (response) => {
   if (!response.ok) {
     const error = await response.json().catch(() => ({}));
@@ -8,6 +10,7 @@ const handleResponse = async (response) => {
   return response.json();
 };
 
+// ===== Guides =====
 export const fetchGuides = () => fetch(`${API_URL}/guides/`).then(handleResponse);
 export const fetchGuide = (id) => fetch(`${API_URL}/guides/${id}`).then(handleResponse);
 export const createGuide = (data) =>
@@ -24,6 +27,7 @@ export const updateGuide = (id, data) =>
   }).then(handleResponse);
 export const deleteGuide = (id) => fetch(`${API_URL}/guides/${id}`, { method: "DELETE" });
 
+// ===== Diary =====
 export const fetchDiaryEntries = (params = {}) => {
   const query = new URLSearchParams(params).toString();
   const url = query ? `${API_URL}/diary/?${query}` : `${API_URL}/diary/`;
@@ -36,6 +40,7 @@ export const createDiaryEntry = (data) =>
     body: JSON.stringify(data),
   }).then(handleResponse);
 
+// ===== Abilities =====
 export const fetchAbilities = () => fetch(`${API_URL}/abilities/`).then(handleResponse);
 export const createAbility = (data) =>
   fetch(`${API_URL}/abilities/`, {
@@ -44,6 +49,7 @@ export const createAbility = (data) =>
     body: JSON.stringify(data),
   }).then(handleResponse);
 
+// ===== Media =====
 export const fetchMedia = (params = {}) => {
   const query = new URLSearchParams(params).toString();
   const url = query ? `${API_URL}/media/?${query}` : `${API_URL}/media/`;

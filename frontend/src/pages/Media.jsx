@@ -1,3 +1,4 @@
+// Página para crear y filtrar elementos de media.
 import { useEffect, useState } from "react";
 import MediaCard from "../components/MediaCard";
 import { fetchGuides, fetchMedia, createMedia } from "../services/api";
@@ -12,6 +13,7 @@ const initialForm = {
 };
 
 const MediaPage = () => {
+  // Estado de guías, items de media, formulario, filtros y carga.
   const [guides, setGuides] = useState([]);
   const [items, setItems] = useState([]);
   const [form, setForm] = useState(initialForm);
@@ -19,19 +21,23 @@ const MediaPage = () => {
   const [loading, setLoading] = useState(false);
 
   const loadData = () => {
+    // Recupera media con filtros actuales y lista de guías.
     fetchMedia(filters).then(setItems).catch(console.error);
     fetchGuides().then(setGuides).catch(console.error);
   };
 
   useEffect(() => {
+    // Carga inicial de datos al montar el componente.
     loadData();
   }, []);
 
   useEffect(() => {
+    // Recarga media cuando cambian los filtros.
     fetchMedia(filters).then(setItems).catch(console.error);
   }, [filters]);
 
   const toggleGuide = (id) => {
+    // Añade o remueve IDs de guías seleccionadas en el formulario.
     setForm((prev) => ({
       ...prev,
       guide_ids: prev.guide_ids.includes(id)
@@ -41,6 +47,7 @@ const MediaPage = () => {
   };
 
   const handleSubmit = async (e) => {
+    // Crea un nuevo item de media desde el formulario controlado.
     e.preventDefault();
     setLoading(true);
     try {
