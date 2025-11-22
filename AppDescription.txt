@@ -1,0 +1,22 @@
+La aplicación permite que un usuario defina su universo espiritual con guías, medios, habilidades y entradas de diario.
+
+Pantallas y formularios disponibles:
+- Home: muestra un resumen con las guías, últimas entradas de diario, habilidades y medios recientes.
+- Guides: formulario para crear guías (nombre, descripción, imagen, color, dominios) y listado de todas las guías.
+- Guide Detail: detalle de una guía con sus dominios, diarios y media asociados.
+- Diary: listado filtrable por tipo y guía, y formulario para crear entradas con título, contenido, tipo, guías y etiquetas de ánimo.
+- Abilities: formulario para registrar habilidades (nombre, descripción, guías, imágenes, media asociado, fecha) y listado resultante.
+- Media: formulario para crear medios (título, descripción, tipo, URL, guías, tags) y listado filtrable por tipo y guía.
+
+Endpoints principales en el backend (FastAPI):
+- /guides (GET/POST) y /guides/{id} (GET/PUT/DELETE)
+- /diary (GET/POST con filtros de guía y fecha) y /diary/{id} (GET/PUT/DELETE)
+- /abilities (GET/POST) y /abilities/{id} (GET/PUT/DELETE)
+- /media (GET/POST con filtros de tipo y guía) y /media/{id} (GET/PUT/DELETE)
+
+Flujo básico de uso:
+1) Crear una guía en la pantalla Guides.
+2) Registrar una entrada de diario seleccionando la guía (o personal) en la pantalla Diary.
+3) Agregar habilidades asociadas a guías en Abilities.
+4) Subir o registrar medios vinculados a guías en Media.
+5) Volver a Home para ver el resumen actualizado de guías, últimas entradas, habilidades y medios.

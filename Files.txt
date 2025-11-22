@@ -1,0 +1,25 @@
+README.md - Resumen del proyecto, requisitos y comandos de ejecución.
+backend/app/main.py - Punto de entrada FastAPI que configura CORS y registra routers.
+backend/app/schemas.py - Modelos Pydantic con validaciones y user_id por defecto.
+backend/app/routes/guides.py - Endpoints CRUD para guías espirituales.
+backend/app/routes/diary.py - Endpoints CRUD y filtros básicos para entradas de diario.
+backend/app/routes/media.py - Endpoints CRUD con filtros por tipo y guía para media.
+backend/app/routes/abilities.py - Endpoints CRUD para habilidades desbloqueadas.
+backend/app/db/json_storage.py - Almacenamiento JSON thread-safe para persistencia ligera.
+backend/requirements.txt - Dependencias del backend FastAPI.
+frontend/src/main.jsx - Punto de montaje React con React Router.
+frontend/src/App.jsx - Enrutamiento principal y layout con la barra de navegación.
+frontend/src/components/NavBar.jsx - Barra de navegación entre secciones.
+frontend/src/components/GuideCard.jsx - Tarjeta presentacional para guías.
+frontend/src/components/DiaryCard.jsx - Tarjeta compacta para entradas de diario.
+frontend/src/components/AbilityCard.jsx - Tarjeta para habilidades.
+frontend/src/components/MediaCard.jsx - Tarjeta para elementos de media.
+frontend/src/pages/Home.jsx - Dashboard con resúmenes de guías, diario, habilidades y media.
+frontend/src/pages/Guides.jsx - Formulario de creación y listado de guías.
+frontend/src/pages/GuideDetail.jsx - Detalle de guía con diarios y media asociados.
+frontend/src/pages/Diary.jsx - Listado filtrable y formulario de diario.
+frontend/src/pages/Abilities.jsx - Formulario y listado de habilidades.
+frontend/src/pages/Media.jsx - Formulario y filtros para media.
+frontend/src/services/api.js - Cliente HTTP que abstrae las llamadas al backend.
+frontend/src/index.css - Estilos globales de la SPA.
+frontend/src/App.css - Estilos heredados del template de Vite.
