@@ -1,0 +1,13 @@
+.guides-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.guide-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.guides-grid a {
+  color: #93c5fd;
+}

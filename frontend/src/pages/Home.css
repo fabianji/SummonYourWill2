@@ -1,0 +1,28 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.simple-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.simple-list li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.pill {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #4f46e5;
+}
