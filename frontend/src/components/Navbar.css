@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: linear-gradient(90deg, #1f2937, #111827);
+  color: #f9fafb;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 12px;
+}
+
+.navbar a {
+  color: #e5e7eb;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}

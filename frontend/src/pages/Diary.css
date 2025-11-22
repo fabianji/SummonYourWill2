@@ -1,0 +1,20 @@
+.filters {
+  display: flex;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.filters select {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #1f2937;
+  background: #0f172a;
+  color: #e5e7eb;
+}
